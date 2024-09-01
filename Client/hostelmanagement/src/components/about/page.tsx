@@ -1,21 +1,5 @@
-import Link from "next/link";
 
-interface HeroIconProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-    alt: string;
-  }
-  
-  function HeroIcon({ alt, ...props }: HeroIconProps) {
-    return (
-      <img
-        {...props}
-        src="/Hero Page.jpg"
-        alt={alt}
-        className="h-6 w-6"
-        aria-label={alt}
-      />
-    );
-  }
-  
+
   
 
 export default function About() {
