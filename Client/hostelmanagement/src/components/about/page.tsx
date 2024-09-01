@@ -1,6 +1,4 @@
-
-
-  
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -20,12 +18,12 @@ export default function About() {
                   </p>
                 </div>
               </div>
-              <img
-                src="Hero Page.jpg"
+              <Image
+                src="/Hero Page.jpg"
                 alt="Hall of Residence"
                 className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
-                width="550"
-                height="550"
+                width={550}
+                height={550}
               />
             </div>
           </div>
@@ -37,17 +35,17 @@ export default function About() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Exceptional Amenities</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Our hall of residence is designed to provide you with everything you need to thrive. From modern
-                  facilities to recreational spaces, we've got you covered.
+                  facilities to recreational spaces, we&apos;ve got you covered.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
-                src="Hero Page.jpg"
+              <Image
+                src="/Hero Page.jpg"
                 alt="Amenities"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                width="550"
-                height="310"
+                width={550}
+                height={310}
               />
               <div className="flex flex-col justify-center space-y-4">
                 <ul className="grid gap-6">
@@ -92,12 +90,12 @@ export default function About() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
-                src="Hero Page.jpg"
+              <Image
+                src="/Hero Page.jpg"
                 alt="Community"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                width="550"
-                height="310"
+                width={550}
+                height={310}
               />
               <div className="flex flex-col justify-center space-y-4">
                 <ul className="grid gap-6">
@@ -149,10 +147,9 @@ export default function About() {
               <div className="flex flex-col items-start space-y-4">
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Get in Touch</div>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-                  If you have any questions or would like to schedule a tour, please don't hesitate to contact us. We're
+                  If you have any questions or would like to schedule a tour, please don&apos;t hesitate to contact us. We&apos;re
                   here to help you find the perfect fit for your student experience.
                 </p>
-                
               </div>
             </div>
           </div>

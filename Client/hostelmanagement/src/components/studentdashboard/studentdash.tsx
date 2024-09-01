@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {}
 
@@ -41,7 +42,15 @@ interface AvatarImageProps {
 }
 
 function AvatarImage({ src, alt }: AvatarImageProps) {
-  return <img src={src} alt={alt} className="w-full h-full object-cover" />;
+  return (
+    <Image 
+      src={src} 
+      alt={alt} 
+      layout="fill" 
+      objectFit="cover" 
+      className="w-full h-full object-cover" 
+    />
+  );
 }
 
 interface AvatarFallbackProps {
